@@ -1,30 +1,33 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="sv">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us | Booking System</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li>
-            <a href="index.html">Home</a>
-            <a href="rooms.html">Rooms</a>
-            <a href="book.html">Book A Room</a>
-            <a href="bookings.html">My Bookings</a>
-            <a href="contact.html">Contact</a>
+    <header class="site-header">
+      <nav class="site-nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="rooms.html">Rooms</a>
+            <a class="nav-link" href="book.html">Book A Room</a>
+            <a class="nav-link" href="bookings.html">My Bookings</a>
+            <a class="nav-link" href="contact.html">Contact</a>
           </li>
         </ul>
       </nav>
-      <h1>Contact Us at NTI Södertörn</h1>
-      <p>We are here to help with your booking questions.</p>
+      <h1 class="heading page-title">Contact Us at NTI Södertörn</h1>
+      <p class="page-intro">We are here to help with your booking questions.</p>
     </header>
 
-    <main>
-      <section>
-        <h2 id="contact-information">Contact Information</h2>
+    <main class="page-main">
+      <section class="content-section contact-section">
+        <h2 class="heading section-title" id="contact-information">
+          Contact Information
+        </h2>
         <p>
           <strong>Email:</strong>
           <a href="mailto:info@school.example">info@school.example</a>
@@ -36,34 +39,36 @@
         <p><strong>School address:</strong> Röntgenvägen 19, 141 52 Huddinge</p>
       </section>
 
-      <section>
-        <h2 id="opening-hours">Opening Hours</h2>
-        <ul>
+      <section class="content-section contact-section">
+        <h2 class="heading section-title" id="opening-hours">Opening Hours</h2>
+        <ul class="opening-list">
           <li>Monday–Friday: 9:00 AM–5:00 PM</li>
           <li>Saturday: 10:00 AM–2:00 PM</li>
           <li>Sunday: Closed</li>
         </ul>
       </section>
 
-      <section>
-        <h2 id="faq">Frequently Asked Questions</h2>
-        <article>
-          <h3>How do I make a booking?</h3>
-          <p>
+      <section class="content-section contact-section">
+        <h2 class="heading section-title" id="faq">
+          Frequently Asked Questions
+        </h2>
+        <article class="faq-item">
+          <h3 class="heading subheading">How do I make a booking?</h3>
+          <p class="muted-text">
             Choose an available class or appointment, enter your details, and
             confirm your booking.
           </p>
         </article>
-        <article>
-          <h3>Can I change or cancel my booking?</h3>
-          <p>
+        <article class="faq-item">
+          <h3 class="heading subheading">Can I change or cancel my booking?</h3>
+          <p class="muted-text">
             Yes. Contact us by email as soon as possible with your booking
             details.
           </p>
         </article>
-        <article>
-          <h3>When will I receive confirmation?</h3>
-          <p>
+        <article class="faq-item">
+          <h3 class="heading subheading">When will I receive confirmation?</h3>
+          <p class="muted-text">
             A confirmation email is sent immediately after your booking has been
             successfully submitted.
           </p>

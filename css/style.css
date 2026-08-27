@@ -207,3 +207,31 @@ body {
     overflow-x: auto;
   }
 }
+
+@media (max-width: 350px) {
+  .site-header {
+    padding: 1rem 0.75rem 1.5rem;
+  }
+
+  .site-nav,
+  .page-title,
+  .page-intro,
+  .page-main {
+    width: min(100% - 1rem, 1000px);
+  }
+
+  .page-title {
+    font-size: 1.75rem;
+  }
+
+  .hero-section,
+  .room-card,
+  .faq-item,
+  .booking-form {
+    padding: 1rem;
+  }
+
+  .table-cell {
+    padding: 0.5rem;
+  }
+}

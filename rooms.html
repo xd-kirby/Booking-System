@@ -1,83 +1,91 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="sv">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Study Rooms</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li>
-            <a href="index.html">Home</a>
-            <a href="rooms.html">Rooms</a>
-            <a href="book.html">Book A Room</a>
-            <a href="bookings.html">My Bookings</a>
-            <a href="contact.html">Contact</a>
+    <header class="site-header">
+      <nav class="site-nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="rooms.html">Rooms</a>
+            <a class="nav-link" href="book.html">Book A Room</a>
+            <a class="nav-link" href="bookings.html">My Bookings</a>
+            <a class="nav-link" href="contact.html">Contact</a>
           </li>
         </ul>
       </nav>
-      <h1>School Study Rooms</h1>
-      <p>Choose a quiet space for studying, revision, or group work.</p>
+      <h1 class="heading page-title">School Study Rooms</h1>
+      <p class="page-intro">
+        Choose a quiet space for studying, revision, or group work.
+      </p>
     </header>
 
-    <main>
-      <article>
-        <h2>Quiet Study Room</h2>
+    <main class="page-main">
+      <article class="room-card">
+        <h2 class="heading section-title">Quiet Study Room</h2>
         <img
+          class="room-image"
           src="images/room201.jpg"
           alt="A single desk and chair in a quiet school study room"
         />
-        <p>A peaceful room for focused individual study and revision.</p>
-        <p><strong>Capacity:</strong> 1 student</p>
-        <h3>Equipment</h3>
-        <ul>
+        <p class="muted-text">
+          A peaceful room for focused individual study and revision.
+        </p>
+        <p class="capacity"><strong>Capacity:</strong> 1 student</p>
+        <h3 class="heading subheading">Equipment</h3>
+        <ul class="feature-list">
           <li>Desks and chairs</li>
           <li>Desk lamps</li>
           <li>Whiteboard</li>
         </ul>
-        <a href="book.html">Book this room</a>
+        <a class="button" href="book.html">Book this room</a>
       </article>
 
-      <article>
-        <h2>Group Study Room</h2>
+      <article class="room-card">
+        <h2 class="heading section-title">Group Study Room</h2>
         <img
+          class="room-image"
           src="images/room204.jpg"
           alt="Large table and chairs in a school group study room"
         />
-        <p>
+        <p class="muted-text">
           A collaborative space for classmates working on projects together.
         </p>
-        <p><strong>Capacity:</strong> 5 students</p>
-        <h3>Equipment</h3>
-        <ul>
+        <p class="capacity"><strong>Capacity:</strong> 5 students</p>
+        <h3 class="heading subheading">Equipment</h3>
+        <ul class="feature-list">
           <li>Large work table</li>
           <li>Chairs</li>
           <li>Whiteboard and markers</li>
           <li>Power outlets</li>
         </ul>
-        <a href="book.html">Book this room</a>
+        <a class="button" href="book.html">Book this room</a>
       </article>
 
-      <article>
-        <h2>Presentation Study Room</h2>
+      <article class="room-card">
+        <h2 class="heading section-title">Presentation Study Room</h2>
         <img
+          class="room-image"
           src="images/room305.jpg"
           alt="Projector and seating in a school presentation study room"
         />
-        <p>
+        <p class="muted-text">
           A flexible room for presentations, tutoring, and exam preparation.
         </p>
-        <p><strong>Capacity:</strong> 10 students</p>
-        <h3>Equipment</h3>
-        <ul>
+        <p class="capacity"><strong>Capacity:</strong> 10 students</p>
+        <h3 class="heading subheading">Equipment</h3>
+        <ul class="feature-list">
           <li>Projector and screen</li>
           <li>Tables and chairs</li>
           <li>Whiteboard and markers</li>
           <li>Computer with presentation software</li>
         </ul>
-        <a href="book.html">Book this room</a>
+        <a class="button" href="book.html">Book this room</a>
       </article>
     </main>
   </body>

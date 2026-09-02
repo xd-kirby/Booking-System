@@ -1,0 +1,237 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background: #181A1B;
+  line-height: 1.5;
+}
+
+.site-header {
+  padding: 1.5rem 1rem 2rem;
+  background: #333333;
+  color: #fff;
+}
+
+.site-nav,
+.page-title,
+.page-intro,
+.page-main {
+  width: min(100% - 2rem, 1000px);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.site-nav {
+  margin-bottom: 2rem;
+}
+
+.nav-list,
+.nav-item {
+  list-style: none;
+}
+
+.nav-item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.25rem;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-link:hover,
+.nav-link:focus-visible {
+  text-decoration: underline;
+}
+
+.heading {
+  line-height: 1.2;
+}
+
+.page-title {
+  font-size: 2.5rem;
+}
+
+.section-title {
+  margin-bottom: 0.75rem;
+  font-size: 1.75rem;
+}
+
+.subheading {
+  margin: 1.25rem 0 0.5rem;
+}
+
+.page-intro,
+.hero-text {
+  margin-top: 0.75rem;
+}
+
+.page-main {
+  flex: 1;
+  padding: 2rem 0;
+}
+
+.content-section {
+  margin-bottom: 2rem;
+}
+
+.hero-section {
+  padding: 2rem;
+  border: 1px solid #fff;
+  background: #181A1B;
+}
+
+.room-card,
+.faq-item,
+.booking-form {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border: 1px solid #fff;
+}
+
+.room-image {
+  display: block;
+  width: 100%;
+  max-height: 350px;
+  margin: 1rem 0;
+  object-fit: cover;
+}
+
+.capacity {
+  margin-top: 0.5rem;
+}
+
+.feature-list,
+.opening-list {
+  padding-left: 1.25rem;
+}
+
+.button,
+.submit-button {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.65rem 1rem;
+  border: 1px solid #fff;
+  background: #181A1B;
+  color: #fff;
+  font: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus-visible,
+.submit-button:hover,
+.submit-button:focus-visible {
+  background: #333;
+}
+
+.booking-form {
+  max-width: 700px;
+  margin-top: 1.5rem;
+}
+
+.form-field {
+  margin-bottom: 1rem;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-weight: 700;
+}
+
+.form-control {
+  width: 100%;
+  padding: 0.65rem;
+  border: 1px solid #fff;
+  border-radius: 0;
+  background: #181A1B;
+  color: #fff;
+  font: inherit;
+}
+
+.form-textarea {
+  resize: vertical;
+}
+
+.form-control:focus {
+  outline: 2px solid #fff;
+}
+
+.checkbox-input {
+  margin-right: 0.5rem;
+}
+
+.booking-table {
+  width: 100%;
+  margin-top: 1.5rem;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.table-cell {
+  padding: 0.75rem;
+  border: 1px solid #fff;
+}
+
+.table-heading {
+  background: #181A1B;
+  font-weight: 700;
+}
+
+.site-footer {
+  padding: 1rem;
+  background: #333333;
+  color: #fff;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .page-title {
+    font-size: 2rem;
+  }
+
+  .booking-table {
+    display: block;
+    overflow-x: auto;
+  }
+}
+
+@media (max-width: 350px) {
+  .site-header {
+    padding: 1rem 0.75rem 1.5rem;
+  }
+
+  .site-nav,
+  .page-title,
+  .page-intro,
+  .page-main {
+    width: min(100% - 1rem, 1000px);
+  }
+
+  .page-title {
+    font-size: 1.75rem;
+  }
+
+  .hero-section,
+  .room-card,
+  .faq-item,
+  .booking-form {
+    padding: 1rem;
+  }
+
+  .table-cell {
+    padding: 0.5rem;
+  }
+}

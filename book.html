@@ -1,79 +1,140 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="sv">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Book a Room</title>
-</head>
-<body>
-    <header>
-      <nav>
-        <ul>
-          <li>
-            <a href="index.html">Home</a>
-            <a href="rooms.html">Rooms</a>
-            <a href="book.html">Book A Room</a>
-            <a href="bookings.html">My Bookings</a>
-            <a href="contact.html">Contact</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book a Room</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="site-nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="rooms.html">Rooms</a>
+            <a class="nav-link" href="book.html">Book A Room</a>
+            <a class="nav-link" href="bookings.html">My Bookings</a>
+            <a class="nav-link" href="contact.html">Contact</a>
           </li>
         </ul>
       </nav>
     </header>
-	<main>
-		<h1>Book a Room</h1>
-		<form action="#" method="post">
-			<div>
-				<label for="full-name">Full name</label>
-				<input type="text" id="full-name" name="full_name" autocomplete="name" required>
-			</div>
+    <main class="page-main">
+      <h1 class="heading page-title">Book a Room</h1>
+      <form class="booking-form" action="#" method="post">
+        <div class="form-field">
+          <label class="form-label" for="full-name">Full name</label>
+          <input
+            class="form-control"
+            type="text"
+            id="full-name"
+            name="full_name"
+            autocomplete="name"
+            required
+          />
+        </div>
 
-			<div>
-				<label for="email">Email</label>
-				<input type="email" id="email" name="email" autocomplete="email" required>
-			</div>
+        <div class="form-field">
+          <label class="form-label" for="email">Email</label>
+          <input
+            class="form-control"
+            type="email"
+            id="email"
+            name="email"
+            autocomplete="email"
+            required
+          />
+        </div>
 
-			<div>
-				<label for="room">Room</label>
-				<select id="room" name="room" required>
-					<option value="" selected disabled>Select a room</option>
-					<option value="quiet-room">Quiet Room (1 person)</option>
-					<option value="group-room">Group Room (5 people)</option>
-					<option value="presentation-room">Presentation Room (10 people)</option>
-				</select>
-			</div>
+        <div class="form-field">
+          <label class="form-label" for="room">Room</label>
+          <select class="form-control" id="room" name="room" required>
+            <option value="" selected disabled>Select a room</option>
+            <option value="quiet-room">Quiet Room (1 person)</option>
+            <option value="group-room">Group Room (5 people)</option>
+            <option value="presentation-room">
+              Presentation Room (10 people)
+            </option>
+          </select>
+        </div>
 
-			<div>
-				<label for="date">Date</label>
-				<input type="date" id="date" name="date" required>
-			</div>
+        <div class="form-field">
+          <label class="form-label" for="date">Date</label>
+          <input
+            class="form-control"
+            type="date"
+            id="date"
+            name="date"
+            required
+          />
+        </div>
 
-			<div>
-				<label for="start-time">Start time</label>
-				<input type="time" id="start-time" name="start_time" required>
-			</div>
+        <div class="form-field">
+          <label class="form-label" for="start-time">Start time</label>
+          <input
+            class="form-control"
+            type="time"
+            id="start-time"
+            name="start_time"
+            required
+          />
+        </div>
 
-			<div>
-				<label for="end-time">End time</label>
-				<input type="time" id="end-time" name="end_time" required>
-			</div>
+        <div class="form-field">
+          <label class="form-label" for="end-time">End time</label>
+          <input
+            class="form-control"
+            type="time"
+            id="end-time"
+            name="end_time"
+            required
+          />
+        </div>
 
-			<div>
-				<label for="purpose">Purpose</label>
-				<textarea id="purpose" name="purpose" rows="4" required></textarea>
-			</div>
+        <div class="form-field">
+          <label class="form-label" for="purpose">Purpose</label>
+          <textarea
+            class="form-control form-textarea"
+            id="purpose"
+            name="purpose"
+            rows="4"
+            required
+          ></textarea>
+        </div>
 
-			<div>
-				<label for="participants">Number of participants</label>
-				<input type="number" id="participants" name="participants" min="1" max="10" step="1" required>
-			</div>
+        <div class="form-field">
+          <label class="form-label" for="participants"
+            >Number of participants</label
+          >
+          <input
+            class="form-control"
+            type="number"
+            id="participants"
+            name="participants"
+            min="1"
+            max="10"
+            step="1"
+            required
+          />
+        </div>
 
-			<div>
-				<input type="checkbox" id="terms" name="terms" value="accepted" required>
-				<label for="terms">I agree to the terms and conditions.</label>
-			</div>
+        <div class="form-field checkbox-field">
+          <input
+            class="checkbox-input"
+            type="checkbox"
+            id="terms"
+            name="terms"
+            value="accepted"
+            required
+          />
+          <label class="checkbox-label" for="terms"
+            >I agree to the terms and conditions.</label
+          >
+        </div>
 
-			<button type="submit">Submit booking</button>
-		</form>
-	</main>
-</body>
+        <button class="button" type="submit">Submit booking</button>
+      </form>
+    </main>
+  </body>
 </html>

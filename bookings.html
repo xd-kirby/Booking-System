@@ -1,72 +1,75 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="sv">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Room Bookings</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li>
-            <a href="index.html">Home</a>
-            <a href="rooms.html">Rooms</a>
-            <a href="book.html">Book A Room</a>
-            <a href="bookings.html">My Bookings</a>
-            <a href="contact.html">Contact</a>
+    <header class="site-header">
+      <nav class="site-nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="rooms.html">Rooms</a>
+            <a class="nav-link" href="book.html">Book A Room</a>
+            <a class="nav-link" href="bookings.html">My Bookings</a>
+            <a class="nav-link" href="contact.html">Contact</a>
           </li>
         </ul>
       </nav>
     </header>
-    <h1>Room Bookings</h1>
-    <table>
-      <thead>
-        <tr>
-          <th scope="col">Room</th>
-          <th scope="col">Date</th>
-          <th scope="col">Time</th>
-          <th scope="col">Booked by</th>
-          <th scope="col">Status</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Quiet Room</td>
-          <td>2025-06-10</td>
-          <td>09:00–10:00</td>
-          <td>Alex Huica</td>
-          <td>Confirmed</td>
-        </tr>
-        <tr>
-          <td>Group Room</td>
-          <td>2025-06-11</td>
-          <td>11:00–12:00</td>
-          <td>Maria Milo</td>
-          <td>Confirmed</td>
-        </tr>
-        <tr>
-          <td>Presentation Room</td>
-          <td>2025-06-12</td>
-          <td>13:00–15:00</td>
-          <td>Daniels Kuzmins</td>
-          <td>Pending</td>
-        </tr>
-        <tr>
-          <td>Group Room</td>
-          <td>2025-06-13</td>
-          <td>10:00–11:30</td>
-          <td>Elena Johansson</td>
-          <td>Confirmed</td>
-        </tr>
-        <tr>
-          <td>Quiet Room</td>
-          <td>2025-06-14</td>
-          <td>15:00–16:00</td>
-          <td>Victor Vektor</td>
-          <td>Cancelled</td>
-        </tr>
-      </tbody>
-    </table>
+    <main class="page-main">
+      <h1 class="heading page-title">Room Bookings</h1>
+      <table class="booking-table">
+        <thead>
+          <tr>
+            <th class="table-cell table-heading" scope="col">Room</th>
+            <th class="table-cell table-heading" scope="col">Date</th>
+            <th class="table-cell table-heading" scope="col">Time</th>
+            <th class="table-cell table-heading" scope="col">Booked by</th>
+            <th class="table-cell table-heading" scope="col">Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="table-cell">Quiet Room</td>
+            <td class="table-cell">2025-06-10</td>
+            <td class="table-cell">09:00–10:00</td>
+            <td class="table-cell">Alex Huica</td>
+            <td class="table-cell">Confirmed</td>
+          </tr>
+          <tr>
+            <td class="table-cell">Group Room</td>
+            <td class="table-cell">2025-06-11</td>
+            <td class="table-cell">11:00–12:00</td>
+            <td class="table-cell">Maria Milo</td>
+            <td class="table-cell">Confirmed</td>
+          </tr>
+          <tr>
+            <td class="table-cell">Presentation Room</td>
+            <td class="table-cell">2025-06-12</td>
+            <td class="table-cell">13:00–15:00</td>
+            <td class="table-cell">Daniels Kuzmins</td>
+            <td class="table-cell">Pending</td>
+          </tr>
+          <tr>
+            <td class="table-cell">Group Room</td>
+            <td class="table-cell">2025-06-13</td>
+            <td class="table-cell">10:00–11:30</td>
+            <td class="table-cell">Elena Johansson</td>
+            <td class="table-cell">Confirmed</td>
+          </tr>
+          <tr>
+            <td class="table-cell">Quiet Room</td>
+            <td class="table-cell">2025-06-14</td>
+            <td class="table-cell">15:00–16:00</td>
+            <td class="table-cell">Victor Vektor</td>
+            <td class="table-cell">Cancelled</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
   </body>
 </html>
